@@ -10,9 +10,14 @@
 		A0679BC22A211D12003D0551 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0679BC12A211D12003D0551 /* AppDelegate.swift */; };
 		A0679BC42A211D12003D0551 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0679BC32A211D12003D0551 /* SceneDelegate.swift */; };
 		A0679BC62A211D12003D0551 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0679BC52A211D12003D0551 /* ViewController.swift */; };
-		A0679BC92A211D12003D0551 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0679BC72A211D12003D0551 /* Main.storyboard */; };
 		A0679BCB2A211D13003D0551 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0679BCA2A211D13003D0551 /* Assets.xcassets */; };
 		A0679BCE2A211D13003D0551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0679BCC2A211D13003D0551 /* LaunchScreen.storyboard */; };
+		A0679BD72A211D46003D0551 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = A0679BD62A211D46003D0551 /* Swinject */; };
+		A0679BDA2A211D8A003D0551 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = A0679BD92A211D8A003D0551 /* Then */; };
+		A0679BDD2A211D9D003D0551 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A0679BDC2A211D9D003D0551 /* SnapKit */; };
+		A0679BDF2A211E7C003D0551 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0679BDE2A211E7C003D0551 /* SecondViewController.swift */; };
+		A0679BE12A211E99003D0551 /* ColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0679BE02A211E99003D0551 /* ColorProvider.swift */; };
+		A0679BE32A212E76003D0551 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0679BE22A212E76003D0551 /* AppContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +25,12 @@
 		A0679BC12A211D12003D0551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0679BC32A211D12003D0551 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A0679BC52A211D12003D0551 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A0679BC82A211D12003D0551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0679BCA2A211D13003D0551 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0679BCD2A211D13003D0551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0679BCF2A211D13003D0551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0679BDE2A211E7C003D0551 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A0679BE02A211E99003D0551 /* ColorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorProvider.swift; sourceTree = "<group>"; };
+		A0679BE22A212E76003D0551 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0679BDD2A211D9D003D0551 /* SnapKit in Frameworks */,
+				A0679BD72A211D46003D0551 /* Swinject in Frameworks */,
+				A0679BDA2A211D8A003D0551 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +69,9 @@
 				A0679BC12A211D12003D0551 /* AppDelegate.swift */,
 				A0679BC32A211D12003D0551 /* SceneDelegate.swift */,
 				A0679BC52A211D12003D0551 /* ViewController.swift */,
-				A0679BC72A211D12003D0551 /* Main.storyboard */,
+				A0679BDE2A211E7C003D0551 /* SecondViewController.swift */,
+				A0679BE22A212E76003D0551 /* AppContainer.swift */,
+				A0679BE02A211E99003D0551 /* ColorProvider.swift */,
 				A0679BCA2A211D13003D0551 /* Assets.xcassets */,
 				A0679BCC2A211D13003D0551 /* LaunchScreen.storyboard */,
 				A0679BCF2A211D13003D0551 /* Info.plist */,
@@ -83,6 +95,11 @@
 			dependencies = (
 			);
 			name = SwinjectExample;
+			packageProductDependencies = (
+				A0679BD62A211D46003D0551 /* Swinject */,
+				A0679BD92A211D8A003D0551 /* Then */,
+				A0679BDC2A211D9D003D0551 /* SnapKit */,
+			);
 			productName = SwinjectExample;
 			productReference = A0679BBE2A211D12003D0551 /* SwinjectExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,11 @@
 				Base,
 			);
 			mainGroup = A0679BB52A211D12003D0551;
+			packageReferences = (
+				A0679BD52A211D46003D0551 /* XCRemoteSwiftPackageReference "Swinject" */,
+				A0679BD82A211D89003D0551 /* XCRemoteSwiftPackageReference "Then" */,
+				A0679BDB2A211D9D003D0551 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = A0679BBF2A211D12003D0551 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +149,6 @@
 			files = (
 				A0679BCE2A211D13003D0551 /* LaunchScreen.storyboard in Resources */,
 				A0679BCB2A211D13003D0551 /* Assets.xcassets in Resources */,
-				A0679BC92A211D12003D0551 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0679BDF2A211E7C003D0551 /* SecondViewController.swift in Sources */,
+				A0679BE32A212E76003D0551 /* AppContainer.swift in Sources */,
 				A0679BC62A211D12003D0551 /* ViewController.swift in Sources */,
 				A0679BC22A211D12003D0551 /* AppDelegate.swift in Sources */,
+				A0679BE12A211E99003D0551 /* ColorProvider.swift in Sources */,
 				A0679BC42A211D12003D0551 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +171,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A0679BC72A211D12003D0551 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A0679BC82A211D12003D0551 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A0679BCC2A211D13003D0551 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +308,7 @@
 				INFOPLIST_FILE = SwinjectExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +336,7 @@
 				INFOPLIST_FILE = SwinjectExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +374,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A0679BD52A211D46003D0551 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		A0679BD82A211D89003D0551 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		A0679BDB2A211D9D003D0551 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A0679BD62A211D46003D0551 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0679BD52A211D46003D0551 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		A0679BD92A211D8A003D0551 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0679BD82A211D89003D0551 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		A0679BDC2A211D9D003D0551 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0679BDB2A211D9D003D0551 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A0679BB62A211D12003D0551 /* Project object */;
 }
