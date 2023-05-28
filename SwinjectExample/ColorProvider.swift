@@ -10,7 +10,7 @@ protocol ColorProviding {
   var color: UIColor { get }
 }
 
-class ColorProvider: ColorProviding {
+final class ColorProvider: ColorProviding {
   var color: UIColor = {
     let colors: [UIColor] = [
       .lightGray,

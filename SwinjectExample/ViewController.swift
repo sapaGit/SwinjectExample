@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import Then
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
   private lazy var goToSecondVCButton = UIButton().then {
     $0.setTitle("Go to second", for: .normal)

@@ -9,7 +9,7 @@ import Foundation
 import Swinject
 import UIKit
 
-class AppContainer {
+final class AppContainer {
   static let shared = AppContainer()
 
   let container = Container()
